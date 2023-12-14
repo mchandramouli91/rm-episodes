@@ -1,0 +1,110 @@
+body {
+  overflow: hidden;
+  background: antiquewhite;
+}
+
+.heading {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-family: cursive;
+  position: relative;
+  width: calc(100vw - 400px);
+  background: bisque;
+}
+
+.char-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.sidenav {
+  height: calc(100% + 20px);
+  width: 400px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: burlywood;
+  overflow-x: hidden;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.sidenav div {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav div:hover {
+  color: #f1f1f1;
+}
+
+.char-board {
+  margin-left: 400px; /* Same as the width of the sidenav */
+  height: 100vh;
+  overflow: hidden;
+}
+
+.episode-title {
+  font-family: cursive;
+  color: white !important;
+  font-size: 32px !important;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  max-height: calc(100% - 10vh);
+  overflow: auto;
+}
+
+.card-content {
+  text-overflow: ellipsis;
+}
+
+.char-name {
+  font-family: cursive;
+  text-align: center;
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.char-details {
+  font-family: cursive;
+  text-align: left;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.image-style {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.center-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.higlight {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.bold-cls {
+  font-weight: bold;
+}
